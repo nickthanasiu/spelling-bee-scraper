@@ -11,8 +11,6 @@ async function scrapeSpellingBee(){
 
     const { log, error } = console;
 
-    console.log('BS_API_URL : ', BS_API_URL);
-
     log('Launching browser...');
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
